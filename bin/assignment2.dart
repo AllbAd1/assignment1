@@ -12,7 +12,7 @@ void main() {
   }
   print('장바구니에 $total원어치를 담으셨네요');
   if (total >= 20000) {
-    double discount = total / 100 * 10;
+    double discount = total / 10 ;
     print('할인금액 : $discount 원');
     double totaldiscount = total - discount;
     print('최종적으로 결제하실 금액은 $totaldiscount 입니다');
