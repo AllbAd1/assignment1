@@ -1,4 +1,4 @@
-import 'package:assignment1/assignment1.dart' as assignment1;
+
 
 void main() {
   int student = 89;
