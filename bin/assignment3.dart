@@ -1,5 +1,21 @@
+import 'dart:math';
+
 void main() {
-  List<String> number = ["1", "2", "3", "티셔츠", "바지"];
   print('도전 문제');
+
+  List<int> winnerNumber = [9, 19, 29, 35, 37, 38];
+  print('당첨 번호 $winnerNumber');
+
+  var random = Random();
+  int result = random.nextInt(45) + 1;
+
+  List<int> myNumber = [];
+  for (int i = 0; i < 6; i++) {
+    var random = Random();
+    int result = random.nextInt(45) + 1;
+    myNumber.add(result);
+  }
+
   
+  print('발급한 로또 번호 $myNumber');
 }
