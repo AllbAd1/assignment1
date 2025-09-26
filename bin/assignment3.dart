@@ -26,5 +26,23 @@ void main() {
 
   int matchcount = 0;
   List<int> matchNumber = [];
-
+  for (int winnum in winnerNumber) {
+    for (int mynum in myNumber) {
+      if (winnum == mynum) {
+        matchcount++;
+        matchNumber.add(mynum);
+      }
+    }
+  }
+  //print('맞춘 번호 : $matchNumber');
+  //print('맞춘 갯수 : $matchcount');
+  if (matchcount >= 5) {
+    print('당첨여부 : 1등');
+  } else if (matchcount == 4) {
+    print('당첨여부 : 2등');
+  } else if (matchcount == 3) {
+    print('당첨여부 : 3등');
+  } else {
+    print('당첨 여부 : 당첨 실패!');
+  }
 }
